@@ -4,7 +4,7 @@ description: "Run the latest stable version of Spoolman."
 url: "https://github.com/donkie/spoolman"
 slug: "spoolman_server"
 image: ghcr.io/donkie/spoolman
-init: false
+init: true
 arch:
   - aarch64
   - amd64

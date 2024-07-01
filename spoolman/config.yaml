@@ -1,5 +1,5 @@
 name: "Spoolman Server"
-version: 0.18.1
+version: edge
 description: "Run the latest stable version of Spoolman."
 url: "https://github.com/donkie/spoolman"
 slug: "spoolman_server"
@@ -17,7 +17,6 @@ environment:
 map:
   - config:rw  
   - addons:rw
-  - addon_config::rw
 boot: auto
 ports:
   8000/tcp: 8000

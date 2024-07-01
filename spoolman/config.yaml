@@ -12,6 +12,8 @@ arch:
 startup: application
 udev: true
 webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
+environment:
+  SPOOLMAN_DIR_DATA: "/addons/spoolman"
 map:
   - config:rw  
   - addons:rw

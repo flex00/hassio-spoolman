@@ -4,7 +4,7 @@ description: "Run the latest stable version of Spoolman."
 url: "https://github.com/donkie/spoolman"
 slug: "spoolman_server"
 image: ghcr.io/donkie/spoolman
-init: true
+init: false
 arch:
   - aarch64
   - amd64
@@ -12,10 +12,10 @@ arch:
 startup: application
 udev: true
 webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
-environment:
-  SPOOLMAN_DIR_DATA: "/config/addons_config/spoolman"
 map:
   - config:rw  
+  - addons:rw
+  - addon_config::rw
 boot: auto
 ports:
   8000/tcp: 8000

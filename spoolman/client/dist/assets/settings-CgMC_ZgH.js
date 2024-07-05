@@ -1,0 +1,1 @@
+import{b as e}from"./querySettings-CUjj6H0m.js";function i(){const{data:r}=e("currency");return JSON.parse((r==null?void 0:r.value)??'"EUR"')}function a(r,t){return 0 .toLocaleString(r,{style:"currency",currency:t,currencyDisplay:"narrowSymbol",minimumFractionDigits:0,maximumFractionDigits:0}).replace(/\d/g,"").trim()}export{a as g,i as u};

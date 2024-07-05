@@ -1,0 +1,1 @@
+import{j as r}from"./index-DVifsFYV.js";function s(l){let e="vertical",o=[],t=l.size?l.size:"small";return typeof l.color=="string"?o=[l.color]:(e=l.color.vertical?"vertical":"horizontal",o=l.color.colors),r.jsx("div",{className:"spool-icon "+e+" "+t,children:o.map(i=>r.jsx("div",{style:{backgroundColor:"#"+i.replace("#","")}},i))})}export{s as S};

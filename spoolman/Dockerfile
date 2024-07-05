@@ -63,7 +63,7 @@ RUN groupmod -g 1000 users \
     && chown -R app:app /home/app/.local/share/spoolman
 
 # Copy built client
-COPY --chown=app:app client /home/app/spoolman/client
+COPY --chown=app:app client/dist /home/app/spoolman/client/dist
 
 # Copy built app
 COPY --chown=app:app --from=python-builder /home/app/spoolman /home/app/spoolman

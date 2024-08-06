@@ -19,6 +19,8 @@ environment:
   SPOOLMAN_DIR_DATA: "/addons/spoolman"
 map:
   - addons:rw
+ports:
+  8000/tcp: 8000
 init: false
 advanced: false
 stage: stable

@@ -9,8 +9,6 @@ arch:
 homeassistant_api: false
 auth_api: false
 host_network: false
-ingress: true
-ingress_port: 8000
 webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
 panel_icon: mdi:printer-3d
 panel_title: Spoolman

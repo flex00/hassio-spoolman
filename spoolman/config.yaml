@@ -9,7 +9,6 @@ arch:
 homeassistant_api: false
 auth_api: false
 host_network: false
-webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
 ingress: true
 panel_icon: mdi:printer-3d
 panel_title: Spoolman
@@ -18,8 +17,6 @@ startup: application
 uart: false
 environment:
   SPOOLMAN_DIR_DATA: "/addons/spoolman"
-ports:
-  8000/tcp : 8000
 map:
   - addons:rw
 init: false

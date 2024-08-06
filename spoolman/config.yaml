@@ -1,21 +1,35 @@
-name: "Spoolman Server"
-version: edge
-description: "Run the latest stable version of Spoolman."
-url: "https://github.com/donkie/spoolman"
-slug: "spoolman_server"
-init: false
+name: Spoolman Server
+version: 0.18.1
+slug: spoolman_server
+description: Keep track of your inventory of 3D-printer filament spools.
+url: https://github.com/Donkie/Spoolman
 arch:
-  - aarch64
-  - amd64
-  - armv7
-startup: application
-udev: true
-webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
+- amd64
+- aarch64
+homeassistant_api: true
+auth_api: true
+host_network: true
+ingress: true
+ingress_port: 8000
+panel_icon: mdi:printer-3d
+panel_title: Spoolman
+panel_admin: false
+uart: false
 environment:
   SPOOLMAN_DIR_DATA: "/addons/spoolman"
 map:
-  - config:rw  
   - addons:rw
-boot: auto
-ports:
-  8000/tcp: 8000
+init: false
+advanced: false
+stage: stable
+image: ghcr.io/donkie/spoolman
+tmpfs: true
+options:
+  log_level: info
+  safe_mode: false
+schema:
+  log_level: list(debug|info|warning|error)
+  safe_mode: bool
+privileged:
+- SYS_ADMIN
+- DAC_READ_SEARCH

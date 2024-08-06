@@ -10,7 +10,7 @@ homeassistant_api: false
 auth_api: false
 host_network: false
 ingress: true
-ingress_port: 8000
+ingress_port: 8099
 panel_icon: mdi:printer-3d
 panel_title: Spoolman
 panel_admin: false
@@ -19,7 +19,7 @@ uart: false
 environment:
   SPOOLMAN_DIR_DATA: "/addons/spoolman"
 ports:
-  8000/tcp: 8000
+  8099 : 8000
 map:
   - addons:rw
 init: false

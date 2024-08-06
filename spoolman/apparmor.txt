@@ -1,4 +1,4 @@
-profile music_assistant_addon flags=(attach_disconnected,mediate_deleted) {
+profile spoolman_addon flags=(attach_disconnected,mediate_deleted) {
   capability,
   file,
   signal,

@@ -19,7 +19,7 @@ uart: false
 environment:
   SPOOLMAN_DIR_DATA: "/addons/spoolman"
 ports:
-  8099/tcp : 8000
+  8000/tcp : 8099
 map:
   - addons:rw
 init: false

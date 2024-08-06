@@ -1,8 +1,8 @@
-name: "Spoolman Server"
+name: "Spoolman Server (dev)"
 version: edge
 description: "Run the latest stable version of Spoolman."
 url: "https://github.com/donkie/spoolman"
-slug: "spoolman_server"
+slug: "spoolman_server_dev"
 init: false
 arch:
   - aarch64
@@ -11,6 +11,7 @@ arch:
 startup: application
 udev: true
 webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
+stage: experimental
 environment:
   SPOOLMAN_DIR_DATA: "/addons/spoolman"
 map:

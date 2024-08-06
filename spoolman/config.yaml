@@ -8,7 +8,7 @@ arch:
 - aarch64
 homeassistant_api: false
 auth_api: false
-host_network: false
+host_network: true
 ingress: true
 panel_icon: mdi:printer-3d
 panel_title: Spoolman

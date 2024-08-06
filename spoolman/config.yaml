@@ -10,6 +10,7 @@ homeassistant_api: false
 auth_api: false
 host_network: true
 ingress: true
+ingress_port: 8000
 panel_icon: mdi:printer-3d
 panel_title: Spoolman
 panel_admin: false

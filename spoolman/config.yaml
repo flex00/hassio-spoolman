@@ -11,6 +11,7 @@ auth_api: false
 host_network: false
 ingress: true
 ingress_port: 8000
+webui: "[PROTO:option_name]://[HOST]:[PORT:8000]"
 panel_icon: mdi:printer-3d
 panel_title: Spoolman
 panel_admin: false
@@ -18,7 +19,6 @@ startup: application
 uart: false
 environment:
   SPOOLMAN_DIR_DATA: "/addons/spoolman"
-  SPOOLMAN_BASE_PATH: "/hassio/ingress/b7dfbe55_spoolman_server"
 map:
   - addons:rw
 ports:

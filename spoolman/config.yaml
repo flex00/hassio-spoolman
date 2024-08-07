@@ -8,9 +8,10 @@ arch:
 - aarch64
 homeassistant_api: false
 auth_api: false
-host_network: true
+host_network: false
 ingress: true
 ingress_port: 8000
+ingress_entry: /hassio/ingress/b7dfbe55_spoolman_server
 panel_icon: mdi:printer-3d
 panel_title: Spoolman
 panel_admin: false

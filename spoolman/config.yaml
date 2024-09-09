@@ -1,5 +1,5 @@
 name: Spoolman Server
-version: 0.19.3
+version: 0.20
 slug: spoolman_server
 description: Keep track of your inventory of 3D-printer filament spools.
 url: https://github.com/Donkie/Spoolman
